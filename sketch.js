@@ -17,10 +17,12 @@ function setup() {
     about.mousePressed(function() { page = 1 })
     crews.mousePressed(function() { page = 2 })
     projects.mousePressed(function() { page = 3 })
+
+    noStroke()
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight - 4)
+    resizeCanvas(windowWidth, page == 0? windowHeight:height)
 }
 
 function draw() {
@@ -36,11 +38,14 @@ function draw() {
         }
     }
 
-    background(page == 0? 240:127)
-
-    fill(255)
-    circle(width / 2, height / 2 + map(window.scrollY, 0, 4000, 0, 100), 100)
+    background(page == 0? 240:200)
 
     fill(0)
-    circle(mouseX, mouseY, 50)
+    let test = createVector(width / 2, height / 2 + map(window.scrollY, 0, 2000, 0, 300))
+    circle(test.x, test.y, 100)
+
+    let r = map(dist(test.x, test.y, mouseX, mouseY), 0, 500, 100, 50)
+
+    fill(255, 96, 20)
+    circle(mouseX, mouseY, r)
 }

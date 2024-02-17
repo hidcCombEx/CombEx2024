@@ -10,13 +10,11 @@ function setup() {
 
     let home = select('#home')
     let about = select('#about')
-    let crews = select('#crews')
     let projects = select('#projects')
 
-    home.mousePressed(function() { page = 0 })
-    about.mousePressed(function() { page = 1 })
-    crews.mousePressed(function() { page = 2 })
-    projects.mousePressed(function() { page = 3 })
+    // home.mousePressed(function() { page = 0 })
+    // about.mousePressed(function() { page = 1 })
+    // projects.mousePressed(function() { page = 3 })
 
     noStroke()
 }

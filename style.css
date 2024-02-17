@@ -17,6 +17,13 @@ body {
     color: #565656;
     font-family: "Archivo Black";
     font-weight: 400;
+    position: relative;
+    overflow: hidden scroll;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 #bg {
@@ -64,8 +71,7 @@ nav h1 {
 }
 
 #nav-button li:hover {
-    transform: translate(0, 12px);
-    
+    transform: translate(0, 12px);   
 }
 
 #nav-button a,
@@ -76,17 +82,21 @@ nav h1 {
     transition: ease-in-out 0.5s;
 }
 
-.contents {
-    width: 720px;
-    height: 100%;
-    margin: 0 auto;
-    outline: 1px solid lime;
+#spedup-large {
+    position: absolute;
+    top: -380px;
+    right: -560px;
+    /* transform: rotate(15deg) scaleX(-1); */
+    z-index: -1;
 }
 
-.contents h1 {
-    position: relative;
-    height: 50%;
-    padding: 600px 0;
+#spedup-small {
+    width: 1400px;
+    position: absolute;
+    top: -240px;
+    left: -840px;
+    /* transform: rotate(35deg); */
+    z-index: -1;
 }
 
 #main-title {
@@ -130,7 +140,7 @@ nav h1 {
     transition: 0.5s;
     font-family: "DM Mono";
     font-weight: 500;
-    font-size: 18pt;
+    font-size: 20pt;
 }
 
 @keyframes scroll {
@@ -179,7 +189,7 @@ hr {
 }
 
 footer {
-    width: 340px;
+    width: 540px;
     margin: 0 auto;
 }
 
@@ -201,8 +211,8 @@ footer p {
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: #C2C2C2;
 }
 
@@ -249,12 +259,12 @@ footer p {
     }
 
     footer {
-        width: 180px;
+        width: 360px;
     }
 
     footer h3 {
         font-size: 16pt;
-        margin: 20px auto 15px auto;
+        margin: 20px auto 10px auto;
     }
 
     footer p {
@@ -262,11 +272,11 @@ footer p {
     }
 
     #logos {
-        margin: 20px auto 40px auto;
+        margin: 25px auto 40px auto;
     }
 
     .logo {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
     }
 }

@@ -16,6 +16,7 @@ body {
     background-color: #F2F2F2;
     color: #565656;
     font-family: "Archivo Black";
+    font-weight: 400;
 }
 
 #bg {
@@ -39,7 +40,7 @@ nav h1 {
     display: inline-block;
     margin-top: 18px;
     margin-left: 8%;
-    letter-spacing: -0.05em;
+    letter-spacing: -1pt;
 }
 
 #nav-button {

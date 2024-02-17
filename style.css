@@ -9,7 +9,13 @@ a:link,
 a:focus,
 a:visited {
     text-decoration: none;
-    color: black;
+    color: #565656;
+}
+
+body {
+    background-color: #F2F2F2;
+    color: #565656;
+    font-family: "Archivo Black";
 }
 
 #bg {
@@ -21,26 +27,28 @@ a:visited {
 
 nav {
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    backdrop-filter: blur(6px);
     z-index: 1;
 }
 
 nav h1 {
     display: inline-block;
-    margin-top: 8px;
-    margin-left: 18%;
+    margin-top: 18px;
+    margin-left: 8%;
+    letter-spacing: -0.05em;
 }
 
 #nav-button {
     display: inline-block;
-    width: 30%;
-    margin-right: 18%;
-    display: fle
+    width: 20%;
+    max-width: 200px;
+    margin-right: 8%;
+    font-family: "Montserrat";
+    font-weight: 500;
 }
 
 #nav-button ul {
@@ -49,7 +57,7 @@ nav h1 {
 }
 
 #nav-button li {
-    margin-top: 14px;
+    margin-top: 26px;
     list-style: none;
     transition: ease-in-out 0.5s;
 }
@@ -57,12 +65,6 @@ nav h1 {
 #nav-button li:hover {
     transform: translate(0, 12px);
     
-}
-
-@media screen and (max-width: 720px) {
-    .nav-button ul {
-        display: none;
-    }
 }
 
 #nav-button a,
@@ -84,4 +86,186 @@ nav h1 {
     position: relative;
     height: 50%;
     padding: 600px 0;
+}
+
+#main-title {
+    margin-top: 26vh;
+    margin-left: 8%;
+    font-size: 156pt;
+    letter-spacing: -6pt;
+}
+
+#ex-date {
+    margin-top: 30px;
+    margin-left: 8%;
+    margin-bottom: 200px;
+    font-size: 84pt;
+    letter-spacing: -8pt;
+}
+
+.scrolling-text {
+    display: flex;
+    overflow: hidden;
+}
+
+.scrolling-text:nth-of-type(3) div {
+    animation: scroll2 var(--time) linear infinite;
+    color: #EA4D37;
+}
+
+.scrolling-text div {
+    margin: 0 3px;
+    white-space: nowrap;
+    animation: scroll var(--time) linear infinite;
+}
+
+.scrolling-text div:nth-of-type(2) {
+    animation-delay: calc(var(--time) * -2);
+}
+
+.scrolling-text div p {
+    display: inline-flex;
+    margin: 5px 3px;
+    transition: 0.5s;
+    font-family: "DM Mono";
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#main-crews {
+    margin: 180px 0;
+    margin-left: 8%;
+    width: 20%;
+}
+
+#main-crews a {
+    display: inline-block;
+    font-family: "DM Mono";
+    font-weight: 300;
+    /* font-size: 3rem; */
+    font-size: 84pt;
+    letter-spacing: 4pt;
+    margin: 22px 0;
+    transition: 0.5s;
+}
+
+#main-crews a:hover {
+    color: #EA4D37;
+}
+
+hr {
+    width: 160px;
+    margin: 0 auto;
+    border: 1px solid #C2C2C2;
+}
+
+footer {
+    width: 340px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    font-size: 24pt;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+footer p {
+    text-align: center;
+    font-family: "Noto Sans";
+}
+
+#logos {
+    margin: 30px auto 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #C2C2C2;
+}
+
+@media screen and (max-width: 880px) {
+    #nav-button ul {
+        display: none;
+
+    }
+
+    nav h1 {
+        font-size: 10pt;
+    }
+
+    #main-title {
+        margin-top: 20vh;
+        max-width: 360px;
+        font-size: 64pt;
+        letter-spacing: -3pt;
+        line-height: -36pt;
+    }
+
+    #ex-date {
+        font-size: 40pt;
+        letter-spacing: -5pt;
+    }
+
+    #main-crews a {
+        font-size: 32pt;
+        letter-spacing: -1pt;
+    }
+
+    .scrolling-text div p {
+        font-size: 12pt;
+        margin: 2px 0;
+    }
+
+    #main-crews a {
+        font-size: 18pt;
+        letter-spacing: -1pt;
+    }
+
+    hr {
+        width: 100px;
+    }
+
+    footer {
+        width: 180px;
+    }
+
+    footer h3 {
+        font-size: 16pt;
+        margin: 20px auto 15px auto;
+    }
+
+    footer p {
+        font-size: 8pt;
+    }
+
+    #logos {
+        margin: 20px auto 40px auto;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
 }

@@ -19,18 +19,27 @@
     font-family: "DM Mono";
 }
 
+.container hr {
+    height: 1px;
+    border: 0;
+    background-color: #565656;
+    display: none;
+}
+
 .block {
     display: flex;
     justify-content: space-between;
-    margin: 120px 0;
+    margin: 80px 0;
 }
 
 .image {
     width: 30%;
+    background-size: contain;
 }
 
 .text { 
     width: 60%;
+    padding: 60px 0;
 }
 
 .text h2 {
@@ -55,14 +64,19 @@
     list-style: none;
 }
 
-.title ul li:nth-child(1) img {
-    width: 33px;
-    margin-top: 1px;
+.title ul a {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
 }
 
-.title ul li:nth-of-type(2) img {
-    width: 36px;
-    margin-left: 20px;
+.title ul a:nth-of-type(1) {
+    margin: 0;
+}
+
+.title ul a li {
+    width: 100%;
+    height: 100%;
 }
 
 #exhibition {
@@ -70,8 +84,12 @@
     align-items: flex-start;
 }
 
+#exhibition img {
+    box-shadow: 0 0 16px #00000030;
+}
+
 #overview h1 {
-    font-size: 32pt;
+    font-size: 48pt;
 }
 
 #overview p {
@@ -84,15 +102,84 @@
     margin-bottom: 180px;
 }
 
-#crews h1 {
-    font-family: "Montserrat";
-    font-weight: 600;
-}
-
 #yawayats,
 #opensourcelab,
 #jochiwontypography,
 #primeframe
 #vivid {
     scroll-margin-top: 160px;
+}
+
+@media screen and (max-width: 768px) {
+    .container hr {
+        display: block;
+    }
+
+    #exhibition {
+        margin-bottom: 100px;
+    }
+
+    #poster {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    #overview h1 {
+        font-size: 36pt;
+    }
+
+    #overview p {
+        margin-top: 30px;
+        font-size: 12pt;
+        text-align: left;
+    }
+
+    #crews {
+        margin-bottom: 80px;
+    }
+
+    .block {
+        display: block;
+        margin: 60px 0;
+    }
+
+    .image {
+        width: 200px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .text {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .text p {
+        font-size: 12pt;
+        text-align: center;
+        line-height: 1.6em ;
+    }
+
+    .title {
+        display: block;
+        text-align: center;
+    }
+
+    .title ul {
+        width: 100px;
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .title ul li {
+        width: 19px;
+        height: 19px;
+    }
+
+    .title ul li:nth-of-type(1) img {
+        width: 20px;
+        height: 20px;
+    }
 }

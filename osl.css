@@ -1,7 +1,7 @@
 #info {
     display: flex;
     justify-content: space-between;
-    margin: 160px 0 20px 0;
+    margin: 120px 0 20px 0;
 }
 
 #project {
@@ -10,16 +10,17 @@
 
 #crew {
     width: 120px;
+    height: 90px;
 }
 
 #project h1 {
-    margin-top: 20px;
     font-size: 64pt;
 }
 
 #project p {
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 1.2em;
+    line-height: 1.8em;
 }
 
 #link {
@@ -49,6 +50,7 @@
 #participants {
     width: 32%;
     font-family: "Montserrat";
+    margin-top: 20px;
 }
 
 #participants h2 {
@@ -88,4 +90,43 @@
     width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #images {
+        column-count: 2;
+    }
+
+    #project {
+        width: 100%;
+    }
+
+    #project h1 {
+        font-size: 36pt;
+    }
+
+    #project p {
+        font-size: 12pt;
+    }
+
+    #participants {
+        width: 100%;
+    }
+
+    #archive h3 {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    #name {
+        height: 360px;
+    }
+
+    #name p {
+        font-size: 12pt;
+    }
+
+    #info {
+        display: block;
+    }
 }

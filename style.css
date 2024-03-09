@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+    overflow: hidden scroll;
+}
+
 a,
 a:hover,
 a:link,
@@ -10,11 +15,6 @@ a:focus,
 a:visited {
     text-decoration: none;
     color: #565656;
-}
-
-html, body {
-    width: 100%;
-    overflow: hidden scroll;
 }
 
 body {
@@ -64,6 +64,10 @@ nav h1 {
     letter-spacing: -1pt;
 }
 
+nav svg {
+    display: none;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -96,9 +100,16 @@ nav a:link {
     backdrop-filter: blur(10px);
 }
 
-/* .white a {
-    color: #f2f2f2;
-} */
+.on-toggle {
+    transform: rotate(90deg);
+}
+
+.on-menu {
+    pointer-events: visible;
+	cursor: default;
+    transform: translateY(16px);
+    opacity: 1;
+}
 
 .container {
     width: 84%;
@@ -138,18 +149,50 @@ footer p {
     height: 45px;
 }
 
-@media screen and (max-width: 767px) {
-    nav {
-        height: 40px;
+@media screen and (max-width: 768px) {
+    nav h1 {
+        font-size: 16pt;
+        margin-top: 20px;
     }
 
-    nav h1 {
-        font-size: 10pt;
-        margin-top: 12px;
+    nav svg {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin-top: 16px;
+        transition: ease-out 0.5s;
+    }
+
+    nav svg path {
+        transition: ease-out 0.5s;
     }
 
     nav ul {
-        display: none;
+        display: block;
+        position: absolute;
+        margin-top: 50px;
+        right: 8%;
+        text-align: right;
+    }
+
+    nav ul li {
+        margin: 28px 0;
+        pointer-events: none;
+		cursor: default;
+        transition: ease-out 0.5s;
+        opacity: 0;
+    }
+
+    nav ul a,
+    nav ul a:hover,
+    nav ul a:link,
+    nav ul a:focus,
+    nav ul a:visited
+    {
+        padding: 8px 12px;
+        background-color: #EA4D37;
+        color: white;
+        border-radius: 24px;
     }
 
     hr {

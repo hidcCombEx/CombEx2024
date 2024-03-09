@@ -1,0 +1,98 @@
+#spedup-large {
+    position: absolute;
+    top: 10px;
+    right: -1060px;
+    /* transform: rotate(15deg) scaleX(-1); */
+    z-index: -1;
+}
+
+#spedup-small {
+    width: 1400px;
+    position: absolute;
+    top: -240px;
+    left: -840px;
+    /* transform: rotate(35deg); */
+    z-index: -1;
+}
+
+.container p {
+    font-family: "DM Mono";
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 0;
+}
+
+.image {
+    width: 30%;
+}
+
+.text { 
+    width: 60%;
+}
+
+.text h2 {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 1.2em;
+    margin-top: 40px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title ul {
+    /* width: 100px; */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.title ul li:nth-child(1) img {
+    width: 33px;
+    margin-top: 1px;
+}
+
+.title ul li:nth-of-type(2) img {
+    width: 36px;
+    margin-left: 20px;
+}
+
+#exhibition {
+    margin: 140px 0;
+    align-items: flex-start;
+}
+
+#overview h1 {
+    font-size: 32pt;
+}
+
+#overview p {
+    margin-top: 60px;
+    font-size: 1.3em;
+    line-height: 180%;
+}
+
+#crews {
+    margin-bottom: 180px;
+}
+
+#crews h1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+#yawayats,
+#opensourcelab,
+#jochiwontypography,
+#primeframe
+#vivid {
+    scroll-margin-top: 160px;
+}

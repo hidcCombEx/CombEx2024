@@ -1,0 +1,139 @@
+#spedup-large {
+    position: absolute;
+    top: -380px;
+    right: -560px;
+    /* transform: rotate(15deg) scaleX(-1); */
+    z-index: -1;
+}
+
+#spedup-small {
+    width: 1400px;
+    position: absolute;
+    top: -240px;
+    left: -840px;
+    /* transform: rotate(35deg); */
+    z-index: -1;
+}
+
+#main-title {
+    margin-top: 26vh;
+    margin-left: 8%;
+    font-size: 156pt;
+    letter-spacing: -6pt;
+}
+
+#ex-date {
+    margin-top: 30px;
+    margin-left: 8%;
+    margin-bottom: 200px;
+    font-size: 84pt;
+    letter-spacing: -8pt;
+}
+
+.scrolling-text {
+    display: flex;
+    overflow: hidden;
+}
+
+.scrolling-text div {
+    margin: 0 3px;
+    white-space: nowrap;
+    animation: var(--direction) var(--time) linear infinite;
+}
+
+.scrolling-text div:nth-of-type(2) {
+    animation-delay: calc(var(--time) * -2);
+}
+
+.scrolling-text div p {
+    display: inline-flex;
+    margin: 5px 3px;
+    transition: 0.5s;
+    font-family: "DM Mono";
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#main-crews {
+    margin: 180px 0;
+    width: 20%;
+}
+
+#main-crews a {
+    display: inline-block;
+    font-family: "DM Mono";
+    font-weight: 300;
+    /* font-size: 3rem; */
+    font-size: 84pt;
+    letter-spacing: 4pt;
+    margin: 22px 0;
+    transition: 0.5s;
+}
+
+#main-crews a:hover {
+    color: #EA4D37;
+}
+
+@media screen and (max-width: 767px) {
+    #spedup-large {
+        width: 640px;
+        right: -260px;
+        top: -20px;
+    }
+
+    #spedup-small {
+        width: 0;
+        height: 0;
+    }
+
+    #main-title {
+        margin-top: 20vh;
+        max-width: 360px;
+        font-size: 64pt;
+        letter-spacing: -3pt;
+        line-height: -36pt;
+    }
+
+    #ex-date {
+        font-size: 40pt;
+        letter-spacing: -5pt;
+        margin-bottom: 120px;
+    }
+
+    #main-crews {
+        margin: 60px 0; 
+    }
+
+    #main-crews a {
+        font-size: 32pt;
+        letter-spacing: -1pt;
+    }
+
+    .scrolling-text div p {
+        font-size: 12pt;
+        margin: 2px 0;
+    }
+
+    #main-crews a {
+        font-size: 18pt;
+        letter-spacing: -1pt;
+    }
+}

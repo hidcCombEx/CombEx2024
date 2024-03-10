@@ -64,7 +64,8 @@ class Crew {
         push()
         translate(this.x, this.y)
         rotate(this.a)
-        fill(7, 76, 92, 128)
+        fill(242)
+        stroke(86)
         strokeWeight(3)
         circle(0, 0, this.r)
         

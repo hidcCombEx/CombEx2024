@@ -12,7 +12,6 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight * 0.735)
     canvas.parent('sketch')
 
-    noStroke()
     imageMode(CENTER)
     textAlign(CENTER, CENTER)
     setButton()
@@ -64,6 +63,8 @@ class Crew {
         translate(this.x, this.y)
         rotate(this.a)
         fill(242)
+        stroke(86)
+        strokeWeight(3)
         circle(0, 0, this.r)
         
         image(this.img, 0, 0, this.r, this.r * 0.75)

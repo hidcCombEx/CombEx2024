@@ -45,7 +45,7 @@ function mouseReleased() {
 }
 
 class Crew {
-    constructor(club, index) {
+    constructor(club, img) {
         this.x = random(width * 0.2, width * 0.8)
         this.y = random(height * 0.3, height * 0.8)
         this.r = random(50, 240)

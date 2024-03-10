@@ -12,6 +12,7 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight * 0.735)
     canvas.parent('sketch')
 
+    noStroke()
     imageMode(CENTER)
     textAlign(CENTER, CENTER)
     colorMode(HSB)
@@ -49,6 +50,7 @@ class Crew {
         this.x = random(width * 0.2, width * 0.8)
         this.y = random(height * 0.3, height * 0.8)
         this.r = random(50, 240)
+        this.a = random(TAU)
         this.club = club
         this.img = img
     }
@@ -59,12 +61,14 @@ class Crew {
             cursor(HAND)
         }
 
-        fill(7, 76, 92)
-        stroke(86)
+        push()
+        translate(this.x, this.y)
+        rotate(this.a)
+        fill(7, 76, 92, 128)
         strokeWeight(3)
-        circle(this.x, this.y, this.r)
-
-        noStroke()
-        image(this.img, this.x, this.y, this.r, this.r * 0.75)
+        circle(0, 0, this.r)
+        
+        image(this.img, 0, 0, this.r, this.r * 0.75)
+        pop()
     }
 }

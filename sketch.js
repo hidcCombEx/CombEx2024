@@ -64,6 +64,6 @@ class Crew {
         circle(this.x, this.y, this.r)
 
         noStroke()
-        image(img, this.x, this.y, this.r, this.r * 0.75)
+        image(this.img, this.x, this.y, this.r, this.r * 0.75)
     }
 }

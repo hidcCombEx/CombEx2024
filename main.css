@@ -10,8 +10,8 @@
     width: 1400px;
     position: absolute;
     top: -240px;
-    left: -840px;
-    /* transform: rotate(35deg); */
+    left: calc(-30% - 160px);
+    transition: ease-out 0.5s;
     z-index: -1;
 }
 
@@ -124,7 +124,8 @@
 
     #main-crews a {
         font-size: 32pt;
-        letter-spacing: -1pt;
+        font-weight: 500;
+        letter-spacing: -0.5pt;
     }
 
     .scrolling-text div p {

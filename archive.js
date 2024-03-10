@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('#images li img')
+    const images = document.querySelectorAll('#images li div img')
     const modal = document.querySelector('.modal')
 
     images.forEach(img => {

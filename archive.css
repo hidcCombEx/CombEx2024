@@ -99,11 +99,12 @@
 
 #name p {
     margin: 10px 30px 10px 0;
-    font-size: 18pt;
+    font-size: 24pt;
 }
 
 #archive {
     margin-bottom: 120px;
+    scroll-margin-top: 160px;
 }
 
 #archive h3 {
@@ -118,15 +119,24 @@
     column-count: 3;
 }
 
+#image li {
+    padding: 0;
+}
+
+#images li div {
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
 #images img {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 10px;
+    display: flex;
     transition: ease-in-out 0.5s;
 }
 
 #images img:hover {
-    filter: brightness(1.5);
+    transform: scale(1.15);
     cursor: -webkit-zoom-in;
 }
 
@@ -185,5 +195,9 @@
 
     #info {
         display: block;
+    }
+
+    #images img:hover {
+        transform: scale(1.05);
     }
 }

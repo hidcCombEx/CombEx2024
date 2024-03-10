@@ -80,7 +80,7 @@ nav ul {
 }
 
 nav li {
-    margin-top: 26px;
+    margin-top: 24px;
     margin-left: 100px;
     list-style: none;
 }
@@ -106,6 +106,7 @@ nav a:link {
     /* background-color: #565656D0; */
     /* background-color: transparent; */
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .on-toggle {

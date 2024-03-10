@@ -34,7 +34,7 @@ function draw() {
 function setButton() {
     button = []
     button.push(new Crew('yawayats', yy))
-    button.push(new Crew('opensourcelab', psl))
+    button.push(new Crew('opensourcelab', osl))
     button.push(new Crew('jochiwontypography', jt))
     button.push(new Crew('primeframe', pf))
     button.push(new Crew('vivid', vv))

@@ -60,6 +60,6 @@ class Crew {
         circle(this.x, this.y, this.r)
 
         noStroke()
-        image(logo[this.index], this.x, this.y, this.r / 1.5, logo[this.index].height / logo[this.index].width / this.r / 1.5)
+        image(logo[this.index], this.x, this.y, this.r, this.r * 0.75)
     }
 }

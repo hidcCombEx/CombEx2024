@@ -12,7 +12,7 @@ html, body {
 #spedup-small {
     width: 1400px;
     position: absolute;
-    top: 0;
+    top: -240px;
     left: calc(-30% - 160px);
     transition: ease-out 0.5s;
 }

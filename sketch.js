@@ -59,7 +59,8 @@ class Crew {
             cursor(HAND)
         }
 
-        stroke(7, 76, 92)
+        fill(7, 76, 92)
+        stroke(86)
         strokeWeight(3)
         circle(this.x, this.y, this.r)
 

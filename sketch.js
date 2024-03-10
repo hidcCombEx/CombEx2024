@@ -1,6 +1,4 @@
 let button = [], click = 0
-club = ['yawayats', 'opensourcelab', 'jochiwontypography', 'primeframe', 'vivid'],
-logo = []
 
 function preload() {
     yy = loadImage('logo/yawayats.svg')
@@ -17,16 +15,13 @@ function setup() {
     imageMode(CENTER)
     textAlign(CENTER, CENTER)
     colorMode(HSB)
-
-    logo = [yy, osl, jt, pf, vv]
-    for (let i = 0; i < 5; i ++) button.push(new Crew(club[i], i))
+    setButton()
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight * 0.75)
     clear()
-    button = []
-    for (let i = 0; i < 5; i ++) button.push(new Crew(club[i], i))
+    setButton()
 }
 
 function draw() {
@@ -34,6 +29,15 @@ function draw() {
 
     if (click > 0) click -= 0.5
     button.forEach (p => p.display())
+}
+
+function setButton() {
+    button = []
+    button.push(new Crew('yawayats', yy))
+    button.push(new Crew('opensourcelab', psl))
+    button.push(new Crew('jochiwontypography', jt))
+    button.push(new Crew('primeframe', pf))
+    button.push(new Crew('vivid', vv))
 }
 
 function mouseReleased() {
@@ -60,6 +64,6 @@ class Crew {
         circle(this.x, this.y, this.r)
 
         noStroke()
-        image(logo[this.index], this.x, this.y)
+        image(logo[this.index], this.x, this.y, this.r, this.r * 0.75)
     }
 }

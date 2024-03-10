@@ -34,7 +34,7 @@ function draw() {
 function setButton() {
     button = []
     button.push(new Crew('yawayats', yy))
-    button.push(new Crew('opensourcelab', osl))
+    button.push(new Crew('opensourcelab', psl))
     button.push(new Crew('jochiwontypography', jt))
     button.push(new Crew('primeframe', pf))
     button.push(new Crew('vivid', vv))
@@ -50,7 +50,7 @@ class Crew {
         this.y = random(height * 0.3, height * 0.8)
         this.r = random(50, 240)
         this.club = club
-        this.index = index
+        this.img = img
     }
 
     display() {
@@ -64,6 +64,6 @@ class Crew {
         circle(this.x, this.y, this.r)
 
         noStroke()
-        image(logo[this.index], this.x, this.y, this.r, this.r * 0.75)
+        image(img, this.x, this.y, this.r, this.r * 0.75)
     }
 }

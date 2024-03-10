@@ -17,6 +17,10 @@ a:visited {
     color: #565656;
 }
 
+p {
+    font-family: "Noto Sans KR";
+}
+
 body {
     background-color: #F2F2F2;
     color: #565656;
@@ -83,6 +87,10 @@ nav li {
 
 nav ul a:hover {
     color: #EA4D37;
+}
+
+nav ul a {
+    font-size: 14pt;
 }
 
 nav a,
@@ -153,6 +161,7 @@ footer p {
     nav h1 {
         font-size: 16pt;
         margin-top: 20px;
+        letter-spacing: -1pt;
     }
 
     nav svg {

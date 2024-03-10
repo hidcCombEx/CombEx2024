@@ -1,0 +1,49 @@
+.modal {
+    justify-content: space-around;
+}
+
+.modal img {
+    margin: auto 0;
+}
+
+.modal-text {
+    min-width: 20%;
+    max-width: 40%;
+    margin: auto 0;
+    font-family: "Noto Sans KR";
+    color: white;
+}
+
+.modal-text h3 {
+    font-size: 20pt;
+}
+
+.modal-text p {
+    margin-top: 30px;
+    font-size: 14pt;
+    line-height: 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .modal img {
+        margin: auto;
+    }
+
+    .modal-text {
+        max-width: 80%;
+        margin: 10%;
+    }
+
+    .modal-text h3 {
+        font-size: 16pt;
+    }
+
+    .modal-text p {
+        font-size: 12pt;
+    }
+}

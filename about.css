@@ -2,7 +2,6 @@
     position: absolute;
     top: 10px;
     right: -1060px;
-    /* transform: rotate(15deg) scaleX(-1); */
     z-index: -1;
 }
 
@@ -11,12 +10,7 @@
     position: absolute;
     top: -240px;
     left: -840px;
-    /* transform: rotate(35deg); */
     z-index: -1;
-}
-
-.container p {
-    font-family: "DM Mono";
 }
 
 .container hr {
@@ -50,6 +44,7 @@
 .text p {
     font-size: 1.2em;
     margin-top: 40px;
+    line-height: 1.6em;
 }
 
 .title {
@@ -67,7 +62,7 @@
 .title ul a {
     width: 30px;
     height: 30px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .title ul a:nth-of-type(1) {
@@ -88,12 +83,17 @@
     box-shadow: 0 0 16px #00000030;
 }
 
+#overview.text {
+    padding: 0;
+    margin: auto 0;
+}
+
 #overview h1 {
     font-size: 48pt;
 }
 
 #overview p {
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: 1.3em;
     line-height: 180%;
 }
@@ -159,7 +159,6 @@
     .text p {
         font-size: 12pt;
         text-align: center;
-        line-height: 1.6em ;
     }
 
     .title {

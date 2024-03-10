@@ -5,7 +5,7 @@ document.addEventListener('scroll', () => {
     else header.classList.remove('white')
 })
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById('toggle')
 
     toggle.addEventListener('click', function() {

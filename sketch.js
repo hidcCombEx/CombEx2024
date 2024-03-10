@@ -26,7 +26,7 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight * 0.75)
     clear()
     button = []
-    for (let i = 0; i < 5; i ++) button.push(new Crew(club[i]))
+    for (let i = 0; i < 5; i ++) button.push(new Crew(club[i], i))
 }
 
 function draw() {
@@ -60,6 +60,6 @@ class Crew {
         circle(this.x, this.y, this.r)
 
         noStroke()
-        image(logo[this.index], this.x, this.y, this.r, this.r * 0.75)
+        image(logo[this.index], this.x, this.y)
     }
 }

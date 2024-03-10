@@ -15,7 +15,6 @@ function setup() {
     noStroke()
     imageMode(CENTER)
     textAlign(CENTER, CENTER)
-    colorMode(HSB)
     setButton()
 }
 

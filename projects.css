@@ -1,5 +1,38 @@
+html, body {
+    width: 100%;
+}
+
+#spedup-large {
+    position: absolute;
+    top: -380px;
+    left: calc(50% - 200px);
+    transition: ease-out 0.5s;
+}
+
+#spedup-small {
+    width: 1400px;
+    position: absolute;
+    top: 0;
+    left: calc(-30% - 160px);
+    transition: ease-out 0.5s;
+}
+
 #sketch {
     display: flex;
     justify-content: center;
-    margin: 120px auto;
+    margin: 70px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    #spedup-large {
+        width: 840px;
+        top: -140px;
+        left: calc(80% - 400px);
+    }
+
+    #spedup-small {
+        width: 440px;
+        top: 840px;
+        left: calc(80% - 400px);
+    }
 }

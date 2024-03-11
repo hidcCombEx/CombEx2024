@@ -36,8 +36,8 @@ function setButton() {
     button.push(new Crew('yawayats', yy))
     button.push(new Crew('opensourcelab', osl))
     button.push(new Crew('jochiwontypography', jt))
-    button.push(new Crew('primeframe', pf))
-    button.push(new Crew('vivid', vv))
+    button.push(new Crew('primeframevivid', pf))
+    button.push(new Crew('primeframevivid', vv))
 }
 
 function mouseReleased() {

@@ -15,7 +15,6 @@ function setup() {
     noStroke()
     imageMode(CENTER)
     textAlign(CENTER, CENTER)
-    colorMode(HSB)
     setButton()
 }
 
@@ -37,8 +36,8 @@ function setButton() {
     button.push(new Crew('yawayats', yy))
     button.push(new Crew('opensourcelab', osl))
     button.push(new Crew('jochiwontypography', jt))
-    button.push(new Crew('primeframevivid', pf))
-    button.push(new Crew('primeframevivid', vv))
+    button.push(new Crew('primeframe', pf))
+    button.push(new Crew('vivid', vv))
 }
 
 function mouseReleased() {
@@ -64,7 +63,8 @@ class Crew {
         push()
         translate(this.x, this.y)
         rotate(this.a)
-        fill(7, 76, 92, 128)
+        fill(242)
+        stroke(86)
         strokeWeight(3)
         circle(0, 0, this.r)
         
